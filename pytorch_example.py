@@ -15,7 +15,7 @@ import math
 import time
 from datetime import timedelta
 
-# pytorch의 시작과 같은 코드
+# pytorch의 시작과 같은 Code
 # 그래픽카드를 사용할 수 있으면 사용하고 그렇지 않으면 CPU를 사용한다
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print("Using {} device".format(device))
