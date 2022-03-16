@@ -83,13 +83,17 @@ print("the second item is given by",this_tensor[1].item(),"the second tensor val
 torch_to_list=this_tensor.tolist()  #tolist():역시 마찬가지로 파이썬 리스트로 리턴 해줌
 print('tensor:', this_tensor,"\nlist:",torch_to_list)  # tensor([0, 1, 2, 3]) ,list: [0, 1, 2, 3]
 
-# A tensor for showing how to change value according to the index
 
+
+
+# A tensor for showing how to change value according to the index
 tensor_sample = torch.tensor([20, 1, 2, 3, 4])
 # Change the value on the index 0 to 100
 print("Inital value on index 0:", tensor_sample[0]) #tensor(20)
 tensor_sample[0] = 100
 print("Modified tensor:", tensor_sample)
+
+
 
 # Slice tensor_sample
 subset_tensor_sample = tensor_sample[1:4] #tensor([1,2,3]), 깊은 복사
@@ -138,6 +142,10 @@ sin_result = torch.sin(pi_tensor)
 plt.plot(pi_tensor.numpy(), sin_result.numpy())
 
 
+
+
+
+
 # Create two sample tensors
 
 u = torch.tensor([1, 0])
@@ -166,3 +174,9 @@ u = torch.tensor([1, 2])
 v = torch.tensor([3, 2])
 
 print("Dot Product of u, v:", torch.dot(u,v)) #내적 tensor(1*3+2*2)=tensor(7)
+
+
+print("########################################################################")
+
+
+
