@@ -37,6 +37,21 @@ import numpy as np
 torch.manual_seed(0)
 ```
 
+    Collecting torchvision==0.9.1
+      Downloading torchvision-0.9.1-cp37-cp37m-manylinux1_x86_64.whl (17.4 MB)
+    [2K     [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m17.4/17.4 MB[0m [31m72.4 MB/s[0m eta [36m0:00:00[0m00:01[0m00:01[0m
+    [?25hCollecting torch==1.8.1
+      Downloading torch-1.8.1-cp37-cp37m-manylinux1_x86_64.whl (804.1 MB)
+    [2K     [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m [32m804.1/804.1 MB[0m [31m180.0 MB/s[0m eta [36m0:00:01[0m00:01[0m^C
+
+
+
+
+
+    <torch._C.Generator at 0x7f8dac09a430>
+
+
+
 This is the function for displaying images.
 
 

@@ -154,3 +154,11 @@ for i in range(3):
     print('Index: ', i, 'Transformed x_:', x_, 'Transformed y_:', y_)
 
 
+# Practice: Combine vertical flip, horizontal flip and convert to tensor as a compose. Apply the compose on image. Then plot the image
+# Type your code here
+#RandomVerticalFlip 하고 RandomHorizontalFlip 하고  Tensor화 까지
+my_data_transform = transforms.Compose([transforms.RandomVerticalFlip(p = 1), transforms.RandomHorizontalFlip(p = 1), transforms.ToTensor()])
+dataset = Dataset(csv_file=csv_file , data_dir=directory,transform=my_data_transform)
+show_data(dataset[1])
+
+
